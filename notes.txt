@@ -1,0 +1,97 @@
+  echo  '<iframe width="560" height="315" src="https://www.youtube.com/embed/'.$row['product_videoid'].'" title="YouTube video player" frameborder="0" 
+  allow="accelerometer; autoplay; 
+clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+
+
+   <div class="login_button">
+ <a class="btn btn-primary" href="authentlogin.php" role="button" value="Login">Login</a>
+ <a class="btn btn-primary" href="authentsignup.php" role="button" value="signup">Signup</a>
+ </div>
+</div>
+
+<style>
+        .modal {
+
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 10px;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            padding-top: 60px;
+            padding-right: 60px;
+} 
+
+
+    </style>
+
+before header
+
+<body style="background-image: url(''); background-repeat: no-repeat; background-attachment:fixed;
+background-size:cover;"> </style>
+
+https://sf16-va.tiktokcdn.com/obj/eden-va2/nb-shivsn-ryhs/ljhwZthlaukjlkulzlp/lark-topics/ai-glossary/reinforcement-learning-theory.webp
+
+After login_button div
+
+ <button onclick="document.getElementById('id01').style.display='block'" class="login" style="width:auto; background:#9966FF; color:white;">Login</button>
+<button onclick="document.getElementById('id02').style.display='block'" class="login" style="width:auto;  background:#9966FF; color:white;">Sign Up</button>
+
+	<div id="id01" class="modal">
+        <form class="modal-content animate" action="authentlogin.php" method="post">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            </div>
+            <div class="container">
+                <label for="uname"><b>Enter Username</b></label>
+                <input type="text" placeholder="" name="uname" required><br>
+                <label for="psw"><b>Enter Password</b></label>
+                <input type="password" placeholder="" name="password" required>
+                
+                
+            </div>
+            <div class="container" >
+            <button type="submit" name="login" value ="login">Login</button>
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                
+            </div>
+        </form>
+    </div>
+
+    <div id="id02" class="modal">
+  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" onSubmit="return validatePassword()" action="authentsignup.php" method ="post">
+    <div class="container">
+      <h3>Sign Up to create a account</h3>
+      
+      <hr>
+      <label for="text"><b>Enter Username</b></label>
+      <input type="text" pattern="[a-zA-Z ]+" title="Only Alphabets are allowed" placeholder="" name="uname" autocomplete="off" required>
+      <br>
+      <label for="email"><b>Enter Email ID</b></label>                        
+      <input type="email" placeholder="" name="email" required>
+      <span id="mail" class="text"></span>
+      <br>
+      <label for="password"><b>Enter Password</b></label>
+      <input type="password" placeholder="" name="password" required>
+      <br>
+      <label for="cpassword"><b>Retype Password</b></label>
+      <input type="password" placeholder="" name="cpassword" required>
+      <br>
+      <div class="clearfix">
+        <button type="submit"name="submit"  class="signupbtn">Sign Up</button>
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+</div>
+</div>
+
+ 
+  
